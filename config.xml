@@ -7,10 +7,10 @@
 	
 <!-- versionCode is optional and Android only-->
 
-<name>¿Qué tienes?¿Qué puedes hacer?</name>
+<name>¿Qué tienes que puedes hacer?</name>
 
 <description>
-Aplicacion de ayuda en la cocina
+Aplicacion de ayuda en la cocina.
 </description>
 
 <!--<preference name="phonegap-version" value="3.1.0" />-->
@@ -32,7 +32,8 @@ García Sánchez Sara Belén
    <plugin name ="cordova-plugin-whitelist" source="npm"/>
 
 <!-- Define app icon for each platform. -->  
-   <icon src="res/android/mdpi.png" /> 
+   <icon src="icon.png" /> 
+	<platform name="android">
 
    
 </widget>
