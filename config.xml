@@ -31,9 +31,6 @@ García Sánchez Sara Belén
    <plugin name="cordova-plugin-nativeaudio" source="npm" />
    <plugin name ="cordova-plugin-whitelist" source="npm"/>
 
-<!-- Define app icon for each platform. -->  
-   <icon src="mdpi.png" /> 
-	<platform name="android">
 
-   
+ 
 </widget>
