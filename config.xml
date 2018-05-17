@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8" ?>
 <widget xmlns = "http://www.w3.org/ns/widgets"
     xmlns:gap = "http://phonegap.com/ns/1.0"
-	id = "com.phonegap.QTQPH01"
+	id = "com.phonegap.example5"
 	versionCode = "10"
 	version = "1.0.0">
 	
@@ -13,18 +13,30 @@
 Aplicacion de ayuda en la cocina
 </description>
 
-<preference name="phonegap-version" value="3.1.0" />
-<preference name="orientation" value="portrait"/>
+<!--<preference name="phonegap-version" value="3.1.0" />-->
+<preference name="orientation"        value="portrait" />
 
 <author href="https://build.phonegap.com" email="support@phonegap.com"> <!--puede ser la s de https-->
 García Sánchez Sara Belén
 </author>
 
-<gap:plugin name="org.apache.cordova.device" version="0.2.12" />
-<gap:plugin name="org.apache.cordova.vibration" version="0.3.0" />
-<gap:plugin name="org.apache.cordova.dialogs" version="0.2.6" />
+<!-- Plugins -->  
+   <!-- Core plugins -->  
+<plugin name="cordova-plugin-dialogs" spec="~1.3.1" />
 
-<!--Colocar icono app-->
 
-<icon src="res/android/mdpi.png"/>
+<!-- Third party plugins -->  
+   
+   <!-- A list of available plugins are available at https://build.phonegap.com/plugins -->  
+   <plugin name="cordova-plugin-nativeaudio" source="npm" />
+   <plugin name ="cordova-plugin-whitelist" source="npm"/>
+
+<!-- Define app icon for each platform. -->  
+   <icon src="icon.png" />  
+   <icon src="res/icon/android/icon-36-ldpi.png"  gap:platform="android"  gap:qualifier="ldpi" />  
+   <icon src="res/icon/android/icon-48-mdpi.png"  gap:platform="android"  gap:qualifier="mdpi" />  
+   <icon src="res/icon/android/icon-72-hdpi.png"  gap:platform="android"  gap:qualifier="hdpi" />  
+   <icon src="res/icon/android/icon-96-xhdpi.png" gap:platform="android"  gap:qualifier="xhdpi" />  
+
+   
 </widget>
